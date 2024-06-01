@@ -21,7 +21,7 @@ app.get('/', (req,resp) => {
 
         let peoplesList = '<ul>';
         results.forEach(person => {
-            peoplesList += `<li>${person.name}</li>`;
+            peoplesList += `<li>${person.name} - ${person.id}</li>`;
         });
         peoplesList += '</ul>';
 
